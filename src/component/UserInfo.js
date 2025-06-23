@@ -15,10 +15,10 @@ function UserInfo(props) {
     //배경 랜덤
     const [background, setBackground] = useState(null);
     const backgroundImages = [
-        {id: 1, video: "/images/user_bg1.mp4"},
-        {id: 2, video: "/images/user_bg2.mp4"},
-        {id: 3, video: "/images/user_bg3.mp4"},
-        {id: 4, video: "/images/user_bg4.mp4"}
+        {id: 1, video: `${process.env.PUBLIC_URL}/images/user_bg1.mp4`},
+        {id: 2, video: `${process.env.PUBLIC_URL}/images/user_bg2.mp4`},
+        {id: 3, video: `${process.env.PUBLIC_URL}/images/user_bg3.mp4`},
+        {id: 4, video: `${process.env.PUBLIC_URL}/images/user_bg4.mp4`}
     ];
 
     useEffect(()=> {
